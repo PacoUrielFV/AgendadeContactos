@@ -216,6 +216,10 @@ legend span {
     color: var(--secundario);
 }
 
+.btn:hover {
+    cursor: pointer
+}
+
 .btn-borrar {
     color: var(--primario);
 }
@@ -228,4 +232,27 @@ legend span {
     font-weight: 700;
     font-size: 1.2rem;
     padding: 0.5rem;
+}
+
+/** Notificaciones **/
+.notificacion {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem 3rem;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+.visible {
+    opacity: 1;
+}
+
+.correcto {
+    background-color: rgb(179,241,117);
+    color: green;
+}
+
+.error {
+    background-color: rgb(238,148,166);
+    color: rgb(163,0,33)
 }
